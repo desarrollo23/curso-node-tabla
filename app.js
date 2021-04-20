@@ -37,11 +37,6 @@ try {
     // console.log(argv.base);
     const { opt } = argv;
 
-    if (opt == undefined) {
-        console.log('--option property is missing');
-        return;
-    }
-
     switch (opt.toLowerCase()) {
         case 'create':
             createFile();
