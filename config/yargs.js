@@ -12,12 +12,18 @@ const argv = require('yargs')
         default: false,
         description: 'List or not the multiplying result'
     })
-    .option('limit', {
+    .option('lim', {
         alias: 'limit',
         type: 'number',
         demandOption: true,
         default: 10,
         description: 'How much it will multiply'
+    })
+    .option('opt', {
+        alias: 'option',
+        type: 'string',
+        demandOption: true,
+        description: 'Specified what operation will be executed'
     })
     .argv;
 

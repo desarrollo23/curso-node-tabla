@@ -35,7 +35,7 @@ try {
 
     // console.log(argv);
     // console.log(argv.base);
-    const opt = argv.option;
+    const { opt } = argv;
 
     if (opt == undefined) {
         console.log('--option property is missing');
